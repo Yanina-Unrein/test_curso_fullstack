@@ -1,0 +1,22 @@
+<div 
+  class="slide" 
+  [class.active]="active"> 
+  <img [src]="movie.image" [alt]="movie.title" class="slide-image" /> 
+  <div class="slide-overlay">
+    <h2>{{ movie.title }}</h2>
+    <span>{{ movie.year }}</span>
+    <div class="extra-info">
+        <div class="meta-info">
+            <p class="movie-duration">
+            <img src="assets/icons/icon_time.svg" alt="icono de reloj" class="icon-time">
+            {{ movie.duration }}
+            </p>
+            <p class="movie-rating">
+            <img src="assets/icons/icon_star.svg" alt="icono de estrella" class="icon-star">
+            {{ movie.rating }}
+            </p>
+        </div>
+        <p class="description">{{ movie.description }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+.episodes {   
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  color: var(--white-color);
+  min-height: 100vh;                
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.episodes h2 {
+  text-align: center;
+  color: var(--primary-color);
+  padding-bottom: 10px;
+}
+
+h3{
+  text-align: center;
+  color: var(--secondary-color);
+  padding-bottom: 15px;
+}
+
+.episodes ul {
+  list-style: none;
+  padding: 0;           
+}
+
+.episodes li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}

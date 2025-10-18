@@ -1,0 +1,32 @@
+.ejercicio2 {
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px;
+  background-color: #f8f9fa;
+}
+
+.mensaje-principal {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.mensaje-secundario {
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+.toggle-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.toggle-btn:hover {
+  background-color: #2980b9;
+}

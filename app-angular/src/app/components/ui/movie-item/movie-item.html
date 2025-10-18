@@ -1,0 +1,32 @@
+<div class="movie-card" role="article">
+  <div class="movie-image">
+    <img [src]="movie.image || 'assets/default-movie.jpg'" 
+         [alt]="'Poster de ' + movie.title"
+         loading="lazy">
+    <div class="description-overlay">
+      <div class="description-content">
+        <h4>Sinopsis</h4>
+        <p class="movie-description" *ngIf="movie.description">
+          {{ movie.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="movie-content">
+    <div class="meta-info">
+      <p class="movie-duration">
+        <img src="assets/icons/icon_time.svg" alt="icono de reloj" class="icon-time">
+        {{ movie.duration }}</p>
+      <p class="movie-rating"> 
+        <img src="assets/icons/icon_star.svg" alt="icono de estrella" class="icon-star">
+        {{ movie.rating }}</p>
+    </div>
+    <div class="movie-title">
+      <h3 id="title-{{movie.title}}">{{ movie.title }}</h3>
+      <p class="movie-year">{{ movie.year }}</p>
+    </div>
+    <button class="select-btn" (click)="selectMovie()" 
+            aria-label="Seleccionar película {{ movie.title }}">
+      Seleccionar
+    </button>
+</div>

@@ -1,0 +1,12 @@
+<div class="ejercicio4">
+  <h2>Lista de Películas</h2>
+  <div class="lista-peliculas">
+    <div *ngFor="let pelicula of peliculas; let i = index" class="pelicula-item">
+      <span class="numero">{{ i + 1 }}</span>
+      <div class="contenido">
+        <strong>{{ pelicula.titulo }}</strong>
+        <span>({{ pelicula.year }}) - {{ pelicula.genero }}</span>
+      </div>
+    </div>
+  </div>
+</div>

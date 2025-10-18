@@ -1,0 +1,7 @@
+<div class="ejercicio2">
+  <p class="mensaje-principal">{{ mensaje1 }}</p>
+  <p *ngIf="mostrarMensaje2" class="mensaje-secundario">{{ mensaje2 }}</p>
+  <button (click)="mostrarMensaje2 = !mostrarMensaje2" class="toggle-btn">
+    {{ mostrarMensaje2 ? 'Ocultar' : 'Mostrar' }} mensaje
+  </button>
+</div>

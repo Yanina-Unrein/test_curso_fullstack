@@ -1,0 +1,15 @@
+<div class="search-container" role="search" aria-labelledby="search-label">
+  <div class="search-box">
+    <input 
+      type="text" 
+      id="movie-search"
+      [(ngModel)]="searchTerm" 
+      placeholder="Buscar películas..."
+      aria-describedby="search-help"
+      class="search-input">
+    <span class="search-icon">🔍</span>
+  </div>
+  <p id="search-help" class="search-feedback" *ngIf="searchTerm">
+    Buscando: <strong>{{ searchTerm }}</strong>
+  </p>
+</div>

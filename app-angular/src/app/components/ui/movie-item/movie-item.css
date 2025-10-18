@@ -1,0 +1,127 @@
+.movie-card {
+  border-radius: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.movie-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.movie-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.movie-card:hover .movie-image img {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+
+.description-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.movie-card:hover .description-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.description-content h4 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.description-content p {
+  color: var(--white-color);
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.movie-content {
+  padding: 8px;
+}
+
+.meta-info, .movie-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--white-color);
+  padding: 5px 0;
+}
+
+.movie-duration, .movie-rating{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.movie-duration img, .movie-rating img{
+  width: 16px;
+  height: 16px;
+}
+
+.movie-title{
+  height: 60px;
+  padding: 0;
+}
+
+.movie-content h3 {
+  color: var(--white-color);
+  font-size: 1.090rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.movie-year {
+  color: var(--white-color);
+  font-size: 0.9rem;
+}
+
+.select-btn {
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.select-btn:hover {
+  background-color: var(--secondary-hover);
+}

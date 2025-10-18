@@ -1,0 +1,21 @@
+.ejercicio3 {
+  padding: 10px;
+  margin: 15px;
+}
+
+.ejercicio3 h2 {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 1rem;
+  padding: 4px;
+  color: rgb(132, 150, 250);
+}

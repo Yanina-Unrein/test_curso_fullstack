@@ -1,0 +1,22 @@
+<section class="hero-slider" *ngIf="movies.length > 0">
+  <div class="slider-container">
+    <app-info-slider 
+      *ngFor="let movie of movies; let i = index"
+      [movie]="movie"
+      [active]="i === currentIndex">
+    </app-info-slider>
+  </div>
+  <div class="slider-bottom-bar">
+    <button class="nav-btn prev" (click)="prevSlide()">‹</button>
+    <div class="dots">
+      <span 
+        *ngFor="let movie of movies; let i = index"
+        [class.active]="i === currentIndex"
+        (click)="goToSlide(i)">
+      </span>
+    </div>
+    <button class="nav-btn next" (click)="nextSlide()">›</button>
+  </div>
+</section>
+
+

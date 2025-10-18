@@ -1,0 +1,15 @@
+<section class="movie-list-section" aria-labelledby="movie-list-title">
+  <h1 id="movie-list-title">Nuestra Colección de Películas</h1>
+  <div class="movie-grid">
+    <app-movie-item
+      *ngFor="let movie of movies"
+      [movie]="movie"
+      (movieSelected)="onMovieSelected($event)">
+    </app-movie-item>
+  </div>
+  <app-movie-modal-detail
+    *ngIf="isModalOpen && selectedMovie"
+    [movie]="selectedMovie"
+    (close)="closeModal()">
+  </app-movie-modal-detail>
+</section>

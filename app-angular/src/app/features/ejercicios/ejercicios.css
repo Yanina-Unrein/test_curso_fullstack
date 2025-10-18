@@ -1,0 +1,8 @@
+.ejercicios-container{
+    padding: 90px 10px 10px;
+    overflow-y: auto;
+}
+
+h2, h3 {
+    color: var(--white-color);
+}
